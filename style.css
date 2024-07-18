@@ -1,0 +1,410 @@
+/* import url google fonts in css style sheet*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
+/* ---make a root design for everyone---*/
+:root
+{
+  --green: green;
+  --pink: rgb(255, 0, 132);
+  --black: #130f39;
+  --light-color: #666;
+  --box-shadow: 0.5rem 1.5rem rgba(147, 146, 146, 0.1);
+  --border: .1rem solid rgba(0,0,0.1);
+  --outline: .1rem solid rgba(0,0,0.1);
+}
+*
+{
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+*::selection
+{
+  background: var(--green);
+  color: #fff;
+}
+html
+{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.heading
+{
+  text-align: center;
+  padding: 2rem 0;
+  text-align: center;
+  padding: 4rem 0;
+  padding-bottom: 2rem;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+/* ---create headings like root---*/
+.heading span
+{
+  background-color: var(--green);
+  color: #fff;
+  display: inline-block;
+  padding: .5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+/* ---create btn css like root */
+.btn
+{
+  margin-top: .1rem;
+  display: inline-block;
+  padding: .6rem 4rem;
+  font-size: 1.7rem;
+  border-radius: 2rem;
+  color: #ffffffff;
+  cursor: pointer;
+  background: var(--pink);
+  text-align: center;
+  align-items: center;
+}
+.btn:hover
+{
+  background: var(--green);
+  color: #fff;
+}
+body
+{
+  background: #eee;
+}
+
+/* ---------header code for css start--------*/
+
+.header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+.header .material-symbols-outlined
+{
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-right: 2px;
+  color: var(--green);
+}
+.header .material-symbols-outlined span
+{
+  color: var(--pink);
+  padding: .2rem;
+}
+.header .btn
+{
+  text-align: center;
+  align-items: center;
+}
+/* ------------- code for home section ----------*/
+.section
+{
+    padding: 2rem 9%;
+}
+.home
+{
+  border: 0px solid;
+  justify-content: center;
+  background-color:rgba(234, 239, 237, 0.711);
+  background-position: center;
+  background-size: cover;
+  padding-top: 9rem;
+  padding-bottom: 1.5%;
+  align-items: center;
+  text-align: center;
+}
+.home .content
+{
+  border: 0px solid;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 1.7rem;
+  padding: 2rem 0;
+}
+.home .content h1
+{
+  color: var(--black);
+  font-size: 3rem;
+}
+.home .content span 
+{
+  color: var(--green);
+  font-size: 3rem;
+}
+.home .content p
+{
+  color: var(--light-color);
+  font-size: 1.6rem;
+  padding: .8rem 0;
+  line-height: 2;
+}
+/* ------------ code for features section -------- */
+
+.features .box-container {
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.features .box-container .box {
+  border: 0px solid red;
+  padding: 3rem 2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+}
+.features .box-container .box:hover {
+  box-shadow: 1px 1px 10px 4px var(--green);
+}
+.features .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+/*------------------------------------*/
+.features .box-container .box {
+  border: 0px solid red;
+  padding: 3rem 2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+}
+.features .box-container .box:hover {
+  box-shadow: 1px 1px 10px 4px #130f39;
+}
+.features .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+
+/* ----------- code for rating section --------*/
+
+.ratings .rating-slider
+{
+  border: 1px solid red;  
+  /* padding: 1rem; */
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+  gap: 1.7rem;
+  padding: 3rem 2rem;
+}
+.ratings .rating-slider:first-child
+{
+  margin: 2rem;
+}
+.ratings .rating-slider .box
+{
+  border: 0px solid red;
+  padding: 6rem 5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  background: #fff;
+  outline: var(--outline);
+  text-align: center;
+  outline-offset: -1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+}
+.ratings .rating-slider .box:hover
+{
+  box-shadow: 1px 1px 10px 5px var(--green)
+}
+.ratings .rating-slider .box img
+{
+  height: 15rem;
+}
+.ratings .rating-slider .box h1
+{
+  font-size: 2.3rem;
+  color: var(--black);
+}
+.ratings .rating-slider .box .stars
+{
+  font-size: 1.5rem;
+  color: orange;
+}
+.ratings .rating-slider .box p
+{
+  font-size: 1.3rem;
+  color: var(--light-color);
+  padding: 1rem .5rem;
+  line-height: 1.6;
+}
+
+/* -------------code for css footer---------- */
+.footer
+{
+  background: #fff;
+}
+.footer .box-contianer
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-contianer .box h3
+{
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 2rem;
+}
+.footer .box-contianer .box h3 .material-symbols-outlined
+{
+  color: var(--green);
+}
+.footer .box-contianer .box a
+{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 2rem;
+}
+.footer .box-contianer .box a i
+{
+  color: var(--green);
+  padding: .5rem;
+}
+.footer .box-contianer .box a:hover i
+{
+  padding-right: 2rem;
+}
+.footer .box-contianer .box p
+{
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  line-height: 1.8;
+}
+.footer .box-contianer .box span
+{
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  line-height: 1.8;
+}
+.footer .box-contianer .box .googlemap 
+{
+  align-items: center;
+}
+.footer .box-contianer .box .googlemap iframe
+{
+  top: 0%;
+  left: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 5px 15px 15rem;
+  border-radius: 2rem 2rem 2px 2rem;
+  bottom: 10rem;
+}
+.footer .credit
+{
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: var(--border);
+}
+.footer .credit span
+{
+  color: var(--green);
+}
+
+/* ---------- MEDIA QUERY -------- */
+
+@media(max-width: 1050px)
+{
+  html
+  {
+  font-size: 60%;
+  }
+  .header
+  {
+    padding: 2.5rem;
+  }
+  section
+  {
+    padding: 2rem;
+  }
+}
+@media(max-width: 800px)
+{
+  html
+  {
+    font-size: 55%;
+  }
+  .home .content
+  {
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    width: 30rem;
+    box-shadow: var(--black);
+  }
+}
+@media(max-width: 450px)
+{
+  html
+  {
+  font-size: 50%;
+  }
+  .heading
+  {
+    font-size: 2.5rem;
+  }
+  .home .content
+  {
+    font-size: 2rem;
+  }
+  .footer
+  {
+    text-align: center;
+  }
+} 
+
